@@ -22,7 +22,10 @@ builder.Services.AddCors(options =>
             .AllowCredentials()
             .SetIsOriginAllowed(_ => true));
 });
-
+builder.WebHost.ConfigureKestrel(serverOptions =>
+{
+    serverOptions.Limits.MaxRequestBodySize = 300_000_000; // 300MB
+});
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
