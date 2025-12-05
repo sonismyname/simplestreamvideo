@@ -63,7 +63,7 @@ namespace StreamAudio.Controllers
         public async Task<IActionResult> UploadAndConvert([FromForm] UploadVideoRequest request)
         {
             var webRoot = _env.WebRootPath;
-            if (!string.IsNullOrEmpty(webRoot))
+            if (string.IsNullOrEmpty(webRoot))
             {
                 // Ví dụ lưu trong folder "wwwroot" của app
                 webRoot = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot");
