@@ -74,16 +74,16 @@ namespace StreamAudio.Controllers
                 return BadRequest("File is empty");
 
             // 0. Tạo thư mục wwwroot nếu chưa tồn tại
-            if (!Directory.Exists(_env.WebRootPath))
+            if (!Directory.Exists(webRoot))
             {
-                Directory.CreateDirectory(_env.WebRootPath);
+                Directory.CreateDirectory(webRoot);
             }
 
             // 1. Tạo đường dẫn input/output
             var id = Guid.NewGuid().ToString();
 
-            var inputPath = Path.Combine(_env.WebRootPath, $"{id}.mp4");
-            var outputFolder = Path.Combine(_env.WebRootPath, id);
+            var inputPath = Path.Combine(webRoot, $"{id}.mp4");
+            var outputFolder = Path.Combine(webRoot, id);
 
             Directory.CreateDirectory(outputFolder);
 
