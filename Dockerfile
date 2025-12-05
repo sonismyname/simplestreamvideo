@@ -1,10 +1,10 @@
-# 1. Base runtime
+﻿# 1. Base runtime
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 WORKDIR /app
 EXPOSE 5000
 EXPOSE 5001
 
-# 2. C�i FFmpeg
+# 2. Cài FFmpeg
 RUN apt-get update && \
     apt-get install -y ffmpeg && \
     rm -rf /var/lib/apt/lists/*
@@ -12,10 +12,15 @@ RUN apt-get update && \
 # 3. Build stage
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
-COPY ["StreamAudio/StreamAudio.csproj", "StreamAudio/"]
-RUN dotnet restore "StreamAudio/StreamAudio.csproj"
+
+# Copy .csproj và restore
+COPY ["StreamAudio.csproj", "./"]
+RUN dotnet restore "StreamAudio.csproj"
+
+# Copy toàn bộ source
 COPY . .
-WORKDIR "/src/StreamAudio"
+
+# Build
 RUN dotnet build "StreamAudio.csproj" -c Release -o /app/build
 
 # 4. Publish stage
