@@ -1,0 +1,67 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\audio\output\playlist.m3u8" />
+    <None Include="wwwroot\audio\output\segment_000.ts" />
+    <None Include="wwwroot\audio\output\segment_001.ts" />
+    <None Include="wwwroot\audio\output\segment_002.ts" />
+    <None Include="wwwroot\audio\output\segment_003.ts" />
+    <None Include="wwwroot\audio\output\segment_004.ts" />
+    <None Include="wwwroot\audio\output\segment_005.ts" />
+    <None Include="wwwroot\audio\output\segment_006.ts" />
+    <None Include="wwwroot\audio\output\segment_007.ts" />
+    <None Include="wwwroot\audio\output\segment_008.ts" />
+    <None Include="wwwroot\audio\output\segment_009.ts" />
+    <None Include="wwwroot\audio\output\segment_010.ts" />
+    <None Include="wwwroot\audio\output\segment_011.ts" />
+    <None Include="wwwroot\audio\output\segment_012.ts" />
+    <None Include="wwwroot\audio\output\segment_013.ts" />
+    <None Include="wwwroot\audio\output\segment_014.ts" />
+    <None Include="wwwroot\audio\output\segment_015.ts" />
+    <None Include="wwwroot\audio\output\segment_016.ts" />
+    <None Include="wwwroot\audio\output\segment_017.ts" />
+    <None Include="wwwroot\audio\output\segment_018.ts" />
+    <None Include="wwwroot\audio\output\segment_019.ts" />
+    <None Include="wwwroot\audio\output\segment_020.ts" />
+    <None Include="wwwroot\audio\output\segment_021.ts" />
+    <None Include="wwwroot\audio\output\segment_022.ts" />
+    <None Include="wwwroot\audio\output\segment_023.ts" />
+    <None Include="wwwroot\audio\output\segment_024.ts" />
+    <None Include="wwwroot\audio\output\segment_025.ts" />
+    <None Include="wwwroot\audio\output\segment_026.ts" />
+    <None Include="wwwroot\audio\output\segment_027.ts" />
+    <None Include="wwwroot\audio\output\segment_028.ts" />
+    <None Include="wwwroot\audio\output\segment_029.ts" />
+    <None Include="wwwroot\audio\output\segment_030.ts" />
+    <None Include="wwwroot\audio\output\segment_031.ts" />
+    <None Include="wwwroot\audio\output\segment_032.ts" />
+    <None Include="wwwroot\audio\output\segment_033.ts" />
+    <None Include="wwwroot\audio\output\segment_034.ts" />
+    <None Include="wwwroot\audio\output\segment_035.ts" />
+    <None Include="wwwroot\audio\output\segment_036.ts" />
+    <None Include="wwwroot\audio\output\segment_037.ts" />
+    <None Include="wwwroot\audio\output\segment_038.ts" />
+    <None Include="wwwroot\audio\output\segment_039.ts" />
+    <None Include="wwwroot\audio\output\segment_040.ts" />
+    <None Include="wwwroot\audio\output\segment_041.ts" />
+    <None Include="wwwroot\audio\output\segment_042.ts" />
+    <None Include="wwwroot\audio\output\segment_043.ts" />
+    <None Include="wwwroot\audio\output\segment_044.ts" />
+    <None Include="wwwroot\audio\output\segment_045.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\live\" />
+  </ItemGroup>
+
+</Project>
